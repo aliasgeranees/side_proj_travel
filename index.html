@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+
+   <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDyLhyHMQZ9xqDr3Z9qeYat2QiA8OSDK5s",
+        authDomain: "my-js-space-website.firebaseapp.com",
+        projectId: "my-js-space-website",
+        storageBucket: "my-js-space-website.appspot.com",
+        messagingSenderId: "419520390167",
+        appId: "1:419520390167:web:a77e8875af827ab8452852"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Responsive space website</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <div class="logo">
+            <i class="ri-rocket-2-line"> </i>
+            <a href="#" class="nav__logo"> Space </a>
+         </div>
+
+
+
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Features</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Pricing</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+               </li>
+            </ul>
+            <a href="#" class="nav__button">Login</a>
+
+            <!-- close button -->
+            <div>
+               <a href="#" class="nav__close" id="nav-close">
+                  <i class="ri-close-line"> </i>
+               </a>
+            </div>
+         </div>
+
+         <!-- toggle butto -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+
+
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+         <div class="home__container container">
+            <div class="home__content">
+               <h3 class="home__subtitle">
+                  NAVIGATE THE UNIVERSE
+               </h3>
+
+               <h1 class="home__title">
+                  <span>
+                     Start Exploring <br>
+                     Infinite Space
+                  </span>
+
+                  <img src="assets/img/line.svg" alt="">
+               </h1>
+
+               <p class="home__discription">
+                  Start your exploration in space, navigate
+                  and discover all the wonders of the
+                  universe.
+               </p>
+
+               <a href="#" class="home__button">
+                  Get Started
+               </a>
+            </div>
+
+            <div class="home__images">
+               <img src="assets/img/points-space.svg" alt="image" class="home__points">
+               <img src="assets/img/planet.svg" alt="image" class="home__planet-2">
+               <img src="assets/img/planet.svg" alt="image" class="home__planet-1">
+               <img src="assets/img/rocket.svg" alt="image" class="home__rocket">
+            </div>
+
+         </div>
+
+         <img src="assets/img/clouds-1.svg" alt="image" class="home__cloud-1">
+         <img src="assets/img/clouds-2.svg" alt="image" class="home__cloud-2">
+
+
+      </section>
+   </main>
+
+   <!--=============== GSAP ===============-->
+   <script src="assets/js/gsap.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
